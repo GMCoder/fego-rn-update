@@ -1,5 +1,5 @@
 # 使用方式
-# 在终端中执行脚本 sh pack.android.sh platform
+# 在终端中执行脚本 sh pack.sh platform
 # platform可选，ios/android，默认情况下为android
 paw=`pwd`
 echo $paw
@@ -33,6 +33,7 @@ zipName=''
 #rn资源ftp的相对路径
 #mac
 configDir=$path/$platform/all/$sdkVer/
+echo $configDir
 if [ ! -e "$configDir" ]; then 
 	mkdir $configDir
 fi
